@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Navigator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Career Navigator</h1>
+        <p>Болашақ мамандығыңды бірге анықтайық!</p>
+    </header>
+    <main>
+        <section class="test-section">
+            <h2>Қызығушылықтарыңызды анықтайық</h2>
+            <p>Төмендегі сұрақтарға жауап беріп, өзіңізге ең қолайлы мамандықты біліңіз:</p>
+            <form id="career-test">
+                <label>Сізге шығармашылық жұмыс ұнай ма?</label>
+                <select id="question1">
+                    <option value="yes">Иә</option>
+                    <option value="no">Жоқ</option>
+                </select>
+
+                <label>Сіз есептеулермен жұмыс істегенді ұнатасыз ба?</label>
+                <select id="question2">
+                    <option value="yes">Иә</option>
+                    <option value="no">Жоқ</option>
+                </select>
+
+                <label>Сіз адамдарға көмектескенді қалайсыз ба?</label>
+                <select id="question3">
+                    <option value="yes">Иә</option>
+                    <option value="no">Жоқ</option>
+                </select>
+
+                <button type="button" onclick="analyzeResults()">Нәтижені көру</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Career Navigator. Барлық құқықтар қорғалған.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
